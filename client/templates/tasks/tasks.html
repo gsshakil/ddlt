@@ -1,0 +1,8 @@
+<template name="tasks">
+    {{#if isInRole 'admin'}}
+        <h1>Tasks</h1>
+    {{else}}
+        <h1>Unauthorized</h1>
+    {{/if}}
+        
+</template>
