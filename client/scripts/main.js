@@ -4,7 +4,7 @@ AccountsTemplates.configure({
     defaultLayout: 'layout1',
     defaultContentRegion: 'main',
     defaultLayoutRegions: {
-        top: 'navbar'
+        top: 'Navbar'
     },
     
     // Behavior
