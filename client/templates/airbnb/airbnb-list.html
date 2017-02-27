@@ -1,0 +1,187 @@
+<template name="Airbnb_list">
+    {{> Nav_bottom}}
+    <div class="wrapper">
+        <div class="row">
+            <div class="list">
+                <div class="list-wrapper">
+                    <div class="list-wrapper-inside">
+                        {{> Airbnb_list_topbar}}
+                        <div class="list-card-wrapper">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    {{> Airbnb_list_card}}             
+                                </div>
+                                <div class="col-md-6">
+                                    {{> Airbnb_list_card}}                                     
+                                </div>
+                                <div class="col-md-6">
+                                    {{> Airbnb_list_card}}             
+                                </div>
+                                <div class="col-md-6">
+                                    {{> Airbnb_list_card}}                                     
+                                </div>
+                                <div class="col-md-6">
+                                    {{> Airbnb_list_card}}             
+                                </div>
+                                <div class="col-md-6">
+                                    {{> Airbnb_list_card}}                                     
+                                </div>
+                            </div>
+                        </div> 
+                        <script>
+                            $('.owl-carousel').owlCarousel({
+                                items: 1,
+                                loop: true,
+                                nav: true,
+                                lazyLoad: true,
+                                navText: ['']
+                            });
+                        </script>
+                    </div>
+                    {{> Airbnb_pagination}}
+                    {{> Airbnb_footer}}}
+                </div>               
+            </div>
+            <div class="map">
+                {{> Airbnb_list_map}}
+            </div>
+        </div>
+    </div>
+</template>
+
+
+<template name="Airbnb_list_topbar">
+    <div class="airbnb-list-topbar">
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <p>Enter dates to see full pricing. Additional fees apply. Taxes may be added.</p>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="location">
+                    <strong><p>203 Rentals · Dhaka</p></strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="Airbnb_list_card">
+    <div class="airbnb-list-card">
+        <div class="slider">
+            <span class="favorite"><i class="fa fa-heart-o fa-2x"></i></span>
+            <div class='owl-carousel'>
+                <div><img src="img/card1.jpg" width="100%" alt=""></div>
+                <div><img src="img/card2.jpg" width="100%" alt=""></div>
+                <div><img src="img/card3.jpg" width="100%" alt=""></div>
+                <div><img src="img/card4.jpg" width="100%" alt=""></div>
+                <div><img src="img/card5.jpg" width="100%" alt=""></div>
+                <div><img src="img/card6.jpg" width="100%" alt=""></div>                
+            </div>
+        </div>
+        <div class="location">
+            <span><strong><a href="#">20$</a><span class="badge-rating"><a href=""><i class="fa fa-flash"></i></a></span></strong></span>
+            <strong><small><span class="pull-right">{{> rating}} <span>Reviews</span></span></small></strong>            
+        </div>
+        <div class="content">
+            <strong><h5><a href="#">Cozy Studio near Gulshan-Baridhara</a></h5></strong>
+            <p>Entire home/apt · 1 bed · 2 guests · Business Travel Ready</p>
+        </div>
+    </div>
+</template>
+
+<template name="rating">
+    <span class="rating">
+        <span></span><span></span><span></span><span></span><span></span>
+    </span>
+</template>
+
+<template name="Airbnb_list_map">
+    <div class="map-wrapper">
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var dhaka = {lat: 23.8103, lng: 90.4125};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 14,
+                    zoomControl: false,
+                    scaleControl: false,
+                    scrollwheel: false,
+                    center: dhaka
+                });
+                var marker = new google.maps.Marker({
+                    position: dhaka,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyr2hhQZy405_olEbQnaAh-dA3wPoHMFg&callback=initMap">
+        </script>
+    </div>
+</template>
+
+<template name="Airbnb_pagination">
+    <div class="airbnb-pagination">
+        <span>1 – 18 of 205 Rentals</span>
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</template>
+
+<template name="Airbnb_footer">
+    <div class="airbnb-footer">
+        <ul class="list-inline">
+            <li><a href="#">Bangladesh</a></li><span>></span>
+            <li><a href="#">Dhaka Division</a></li><span>></span>
+            <li><a href="#">Dhaka</a></li>
+        </ul>
+        <br>
+        <span>Places nearby:</span>
+        <br><br>
+        <div class="footer-menu">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul>
+                        <li><a href="#">Chiang Mai</a></li>
+                        <li><a href="#">Kathmandu</a></li>
+                        <li><a href="#">Singapore</a></li>
+                        <li><a href="#">Hong Kong</a></li>
+                    </ul>    
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li><a href="#">Bangkok</a></li>
+                        <li><a href="#">Mueang Phuket</a></li>
+                        <li><a href="#">Bei District</a></li>
+                        <li><a href="#">Bangalore</a></li>
+                    </ul>    
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li><a href="#">Luanda</a></li>
+                        <li><a href="#">Jeddah</a></li>
+                        <li><a href="#">Riyadh</a></li>
+                        <li><a href="#">Nuestra Senora de La Paz</a></li>
+                    </ul>    
+                </div>                    
+            </div>
+        </div>            
+    </div>
+</template>

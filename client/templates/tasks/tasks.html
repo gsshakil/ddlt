@@ -1,21 +1,21 @@
 <template name="Tasks">
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-            <h1>Tasks</h1>
-            <hr>                
-            <form class="new-task">                    
-                <label for="text">Enter a Task:</label>
-                <input type="text" class="form-control" id="text" name="text" placeholder="Type to add new tasks" />                    
-            </form>
-            <ul class="tasks">
-                {{#each tasks}}
-                    {{> task}}
-                {{/each}}
-            </ul>            
-        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h1>Tasks</h1>
+                <hr>                
+                <form class="new-task">                    
+                    <label for="text">Enter a Task:</label>
+                    <input type="text" class="form-control" id="text" name="text" placeholder="Type to add new tasks" />                    
+                </form>
+                <ul class="tasks">
+                    {{#each tasks}}
+                        {{> task}}
+                    {{/each}}
+                </ul>            
+            </div>
+        </div>    
     </div>
-    
-        
 </template>
 
 <template name="task">
