@@ -4,4 +4,9 @@ Template.Navbar.events({
   }
 });
 
-
+Template.Navbar.helpers({
+  profile(){
+      Meteor.subscribe('users');        
+      return Meteor.users.findOne({_id: Meteor.user()._id}).profile;
+    }
+});

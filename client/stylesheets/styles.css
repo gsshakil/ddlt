@@ -8,6 +8,14 @@ body {
     color: #484848;
 }
 
+.wrapper{
+    margin-top: 50px;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+
 /*================Tasks=====================*/
 
 
@@ -36,7 +44,7 @@ ul.tasks li input[type=checkbox]:checked + span{
 
 ul.tasks li button{
     float: right;
-    margin-top: -7px;
+    margin-top: -12px;
 }
 
 ul.tasks li button.btn-default{
@@ -53,6 +61,7 @@ ul.tasks li button.btn-default{
     border: none;
     border-bottom: 1px solid #dce0e0;
     margin-bottom: 0;
+    padding-right: 25px;
 }
 
 .navbar .navbar-nav > li > a{
@@ -68,6 +77,16 @@ ul.tasks li button.btn-default{
 
 .navbar-brand img{
     margin-top: -7px;
+}
+
+.user-menu{
+    margin-top: 5px;
+}
+
+.user-menu .profile-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 /*================Search Box=====================*/
@@ -112,7 +131,7 @@ ul.tasks li button.btn-default{
     border-right: 1px solid #dce0e0;  
 }
 
-a.dropdown-toggle{
+.navbar-bottom a.dropdown-toggle{
     color: #484848;
     padding: 14px 25px;
     display: block;
@@ -126,8 +145,8 @@ a.dropdown-toggle:hover{
 /*================List Wrapper=====================*/
 
 .list-wrapper{
-    height: 86vh;
-    overflow: scroll;
+    height: 80vh;
+    overflow-y: scroll;
 }
 
 .list-wrapper-inside{
@@ -144,7 +163,7 @@ a.dropdown-toggle:hover{
     position: fixed;
     width: 59%;
     left: 0;
-    top: 109px;
+    top: 110px;
     padding: 25px 50px;
     z-index: 99;
 }
@@ -168,7 +187,7 @@ a.dropdown-toggle:hover{
 
 .list-card-wrapper{
     background-color: #fff;
-    margin-top: 120px;
+    margin-top: 70px;
     padding: 25px 25px 25px 50px;
     z-index: -2;
 }
@@ -289,23 +308,29 @@ span.favorite > i:hover ~ i:before {
     color: #767676;        
 }
 
+.pagination > li > a, .pagination > li > span {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
 
 /*================Footer=====================*/
 
+.list-wrapper .airbnb-footer{
+    padding-left: 50px;
+}
 
 .airbnb-footer{
     border-top: 1px solid #dce0e0;
     background-color: #fff;
     color: #767676;    
-    padding: 25px 25px 25px 50px;
+    padding: 25px 0;
 }
 
     
 .airbnb-footer ul{
     padding: 0;
 }
-
-
 
 .airbnb-footer ul li{
     list-style: none;
@@ -335,3 +360,82 @@ span.favorite > i:hover ~ i:before {
   content: "\2605";
 }
 
+
+/*===================Place Detail================*/
+
+.host-info{
+    margin-left: 25px;
+    margin-bottom: 25px;
+    min-width: 165px;
+}
+
+.place-menu li{
+    margin-right: 25px;
+}
+
+.place-info ul li{
+    text-align: center;
+    margin-right: 15px;
+}
+
+
+#location-map{
+    height: 400px;
+}
+
+
+.place-detail-images .owl-carousel .owl-stage {
+    max-height: 550px;
+    overflow: hidden;
+}
+
+.place-detail-images .owl-carousel .owl-item {
+    top: -200px;
+}
+
+
+/*===================Reviews================*/
+
+
+.reviews .user-thumbnail .profile-pic{
+    width: 50px;
+    min-height: 50px;
+    margin-bottom: 8px;
+}
+
+.user-thumb-add-review{
+    margin-top: 25px;
+}
+
+.btn-helpful{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px 10px;
+    color: #999;
+}
+
+.user-thumbnail{
+    text-align: center;
+}
+
+.user-thumbnail .profile-pic{
+    border-radius: 50%;
+    width: 90px;
+    min-height: 90px;
+    margin-bottom: 15px;
+}
+
+span.date{
+    color: #999;
+    font-size: 11px;
+}
+.reviews{
+    position: relative;
+}
+
+.reviews .btn-delete{
+    position: absolute;
+    right: 25px;
+    top: 0;
+}

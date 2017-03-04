@@ -39,12 +39,6 @@ AccountsTemplates.configure({
     homeRoutePath: '/',
     redirectTimeout: 2000,
 
-    // Hooks
-    // onLogoutHook: myLogoutFunc,
-    // onSubmitHook: mySubmitFunc,
-    // preSignUpHook: myPreSubmitFunc,
-    // postSignUpHook: myPostSubmitFunc,
-
     // Texts
     texts: {
       button: {
@@ -78,3 +72,6 @@ AccountsTemplates.configureRoute('resetPwd', {
   path: '/reset-password'
 });
 
+
+// Toastr Settings
+toastr.options.closeDuration = 300;
