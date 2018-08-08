@@ -28,7 +28,7 @@ accounts-google
 service-configuration
 accounts-ui
 alanning:roles
-twbs:bootstrap
+alexwine:bootstrap-4
 fortawesome:fontawesome
 kadira:flow-router
 useraccounts:flow-routing
@@ -48,3 +48,4 @@ raix:handlebar-helpers
 reywood:publish-composite
 matb33:collection-hooks
 momentjs:moment
+mrt:jquery-masonry

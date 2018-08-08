@@ -1,0 +1,61 @@
+<template name="Home">    
+    <div class="header-card">
+      <div class="container">
+          <h1>Organize, Showcase and Discover Creative Works <br> Like Never Before</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="featured-projects">
+        <div class="grid">
+          <div class="grid-item">
+              {{> ProjectCard1}}
+          </div>
+          <div class="grid-item">
+              {{> ProjectCard2}}
+          </div>
+          <div class="grid-item">
+              {{> ProjectCard1}}
+          </div>
+          <div class="grid-item">
+              {{> ProjectCard2}}
+          </div>
+          <div class="grid-item">
+              {{> ProjectCard1}}
+          </div>
+          <div class="grid-item">
+              {{> ProjectCard2}}
+          </div>
+          <div class="grid-item">
+              {{> ProjectCard1}}
+          </div>
+          <div class="grid-item">
+              {{> ProjectCard2}}
+          </div>
+          <div class="grid-item">
+              {{> ProjectCard1}}
+          </div>
+          <div class="grid-item">
+              {{> ProjectCard2}}
+          </div>
+          <div class="grid-item">
+              {{> ProjectCard1}}
+          </div>
+          <div class="grid-item">
+              {{> ProjectCard2}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      setTimeout(function () {
+          $('.grid').masonry({
+              // options...
+              itemSelector: '.grid-item',
+              masonry: {
+                  columnWidth: 10
+              }
+          });
+      }, 1000);
+    </script>
+</template>
