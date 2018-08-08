@@ -1,13 +1,87 @@
 <template name="Brands">
     <div class="header-card">
         <div class="container">
-            <h1>Connect with Creative Professionals</h1>
+            <h1>Connect/Create with Brands</h1>
         </div>
     </div>
     <div class="appbar">
         {{> AppBar}}
     </div> 
-    <div class="container">
-        <h1>Brands</h1>
-    </div>
-</template>
+    <div class="grid-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="filter-panel">
+                            <div class="form-group">
+                                <label for="keyword">Keyword</label>
+                                <input type="text" class="form-control" id="keyword" placeholder="Enter Keyword">
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <input type="text" class="form-control" id="location" placeholder="Enter Location">
+                            </div>
+                            <div class="form-group">
+                                <label for="skills">Skills</label>
+                                <input type="text" class="form-control" id="skills" placeholder="Enter Skills">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="people-list">
+                            {{> BrandCard}}
+                            {{> BrandCard2}}
+                            {{> BrandCard}}
+                            {{> BrandCard2}}
+                            {{> BrandCard}}
+                            {{> BrandCard2}}
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </template>
+    
+    <template name="BrandCard">
+        <div class="people-card brand-card">
+            <div class="profile-pic">
+                <img src="img/brand1.jpg" alt="">
+            </div>
+            <div class="basic-info">
+                <h3><a href="">Vox Studio</a></h3>
+                <p class="strong">Dhaka, Bangladesh</p>
+            </div>
+            <div class="about">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis itaque hic pariatur eaque, ratione optio deleniti amet.</p>
+            </div>
+            <div class="btns">
+                <ul class="list-inline">
+                    <li><a href="" class="btn btn-primary btn-follow">Follow</a></li>
+                    <li><a href="" class="btn btn-success btn-msg"><i class="fa fa-envelope"></i></a></li>
+                    <li class="skills"><i class="fa fa-tags"></i> Architecture, 3D Modeling, 3Ds max, Vray, Photoshop</li>
+                </ul>
+            </div>            
+        </div>
+    </template>
+
+    <template name="BrandCard2">
+        <div class="people-card brand-card">
+            <div class="profile-pic">
+                <img src="img/brand2.jpg" alt="">
+            </div>
+            <div class="basic-info">
+                <h3><a href="">Link 3 House</a></h3>
+                <p class="strong">Viena, Austria</p>
+            </div>
+            <div class="about">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis itaque hic pariatur eaque, ratione optio deleniti amet.</p>
+            </div>
+            <div class="btns">
+                <ul class="list-inline">
+                    <li><a href="" class="btn btn-primary btn-follow">Follow</a></li>
+                    <li><a href="" class="btn btn-success btn-msg"><i class="fa fa-envelope"></i></a></li>
+                    <li class="skills"><i class="fa fa-tags"></i> Architecture, 3D Modeling, 3Ds max, Vray, Photoshop</li>
+                </ul>
+            </div>            
+        </div>
+    </template>

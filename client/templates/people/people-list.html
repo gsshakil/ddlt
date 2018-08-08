@@ -9,14 +9,32 @@
     </div> 
     <div class="grid-wrapper">
         <div class="container">
-            <div class="col-md-3">
-                <div class="filter-panel">
-                    Filter
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="filter-panel">
+                        <div class="form-group">
+                            <label for="keyword">Keyword</label>
+                            <input type="text" class="form-control" id="keyword" placeholder="Enter Keyword">
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" class="form-control" id="location" placeholder="Enter Location">
+                        </div>
+                        <div class="form-group">
+                            <label for="skills">Skills</label>
+                            <input type="text" class="form-control" id="skills" placeholder="Enter Skills">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-9">
-                <div class="people-list">
-                    {{> PeopleCard}}
+                <div class="col-md-9">
+                    <div class="people-list">
+                        {{> PeopleCard}}
+                        {{> PeopleCard2}}
+                        {{> PeopleCard}}
+                        {{> PeopleCard2}}
+                        {{> PeopleCard}}
+                        {{> PeopleCard2}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -24,7 +42,45 @@
 </template>
 
 <template name="PeopleCard">
-    <div class="profile-pic">
-        <img src="img/user1.jpg" alt="">
+    <div class="people-card">
+        <div class="profile-pic">
+            <img src="img/user1.jpg" alt="">
+        </div>
+        <div class="basic-info">
+            <h3>Eddie Valoy</h3>
+            <p class="strong">Dhaka, Bangladesh</p>
+        </div>
+        <div class="about">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis itaque hic pariatur eaque, ratione optio deleniti amet.</p>
+        </div>
+        <div class="btns">
+            <ul class="list-inline">
+                <li><a href="" class="btn btn-primary btn-follow">Follow</a></li>
+                <li><a href="" class="btn btn-success btn-msg"><i class="fa fa-envelope"></i></a></li>
+                <li class="skills"><i class="fa fa-tags"></i> Architecture, 3D Modeling, 3Ds max, Vray, Photoshop</li>
+            </ul>
+        </div>            
+    </div>
+</template>
+
+<template name="PeopleCard2">
+    <div class="people-card">
+        <div class="profile-pic">
+            <img src="img/user2.png" alt="">
+        </div>
+        <div class="basic-info">
+            <h3>Thomas Knoll</h3>
+            <p class="strong">LA,USA</p>
+        </div>
+        <div class="about">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis itaque hic pariatur eaque, ratione optio deleniti amet.</p>
+        </div>
+        <div class="btns">
+            <ul class="list-inline">
+                <li><a href="" class="btn btn-primary btn-follow">Follow</a></li>
+                <li><a href="" class="btn btn-success btn-msg"><i class="fa fa-envelope"></i></a></li>
+                <li class="skills"><i class="fa fa-tags"></i> Architecture, 3D Modeling, 3Ds max, Vray, Photoshop</li>
+            </ul>
+        </div>            
     </div>
 </template>
