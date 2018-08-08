@@ -1,5 +1,70 @@
-<template name="Projects">    
-    <h1>Projects</h1>
+<template name="Projects"> 
+    <div class="header-card">
+        <div class="container">
+            <h1>Discover Creative Works</h1>
+        </div>
+    </div>
+    <div class="appbar">
+        {{> AppBar}}
+    </div>
+    <div class="filter-bar">
+        {{> FilterBar}}
+    </div>
+    <div class="grid-wrapper">
+        <div class="container">
+            <div class="featured-projects">
+                <div class="grid">
+                    <div class="grid-item">
+                        {{> ProjectCard1}}
+                    </div>
+                    <div class="grid-item">
+                        {{> ProjectCard2}}
+                    </div>
+                    <div class="grid-item">
+                        {{> ProjectCard1}}
+                    </div>
+                    <div class="grid-item">
+                        {{> ProjectCard2}}
+                    </div>
+                    <div class="grid-item">
+                        {{> ProjectCard1}}
+                    </div>
+                    <div class="grid-item">
+                        {{> ProjectCard2}}
+                    </div>
+                    <div class="grid-item">
+                        {{> ProjectCard1}}
+                    </div>
+                    <div class="grid-item">
+                        {{> ProjectCard2}}
+                    </div>
+                    <div class="grid-item">
+                        {{> ProjectCard1}}
+                    </div>
+                    <div class="grid-item">
+                        {{> ProjectCard2}}
+                    </div>
+                    <div class="grid-item">
+                        {{> ProjectCard1}}
+                    </div>
+                    <div class="grid-item">
+                        {{> ProjectCard2}}
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script>
+        setTimeout(function () {
+            $('.grid').masonry({
+                // options...
+                itemSelector: '.grid-item',
+                masonry: {
+                    columnWidth: 10
+                }
+            });
+        }, 1000);
+        </script>
 </template>
 
 <template name="ProjectCard1">    

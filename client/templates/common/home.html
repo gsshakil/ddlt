@@ -1,52 +1,57 @@
 <template name="Home">    
     <div class="header-card">
       <div class="container">
-          <h1>Organize, Showcase and Discover Creative Works <br> Like Never Before</h1>
+          <h1>One Stop Platform for the Creative Professionals</h1>
+          <h3 class="capp">Your Creative App</h3>
       </div>
     </div>
-    <div class="container">
-      <div class="featured-projects">
-        <div class="grid">
-          <div class="grid-item">
-              {{> ProjectCard1}}
-          </div>
-          <div class="grid-item">
-              {{> ProjectCard2}}
-          </div>
-          <div class="grid-item">
-              {{> ProjectCard1}}
-          </div>
-          <div class="grid-item">
-              {{> ProjectCard2}}
-          </div>
-          <div class="grid-item">
-              {{> ProjectCard1}}
-          </div>
-          <div class="grid-item">
-              {{> ProjectCard2}}
-          </div>
-          <div class="grid-item">
-              {{> ProjectCard1}}
-          </div>
-          <div class="grid-item">
-              {{> ProjectCard2}}
-          </div>
-          <div class="grid-item">
-              {{> ProjectCard1}}
-          </div>
-          <div class="grid-item">
-              {{> ProjectCard2}}
-          </div>
-          <div class="grid-item">
-              {{> ProjectCard1}}
-          </div>
-          <div class="grid-item">
-              {{> ProjectCard2}}
-          </div>
-        </div>
-      </div>
+    <div class="appbar">
+      {{> AppBar}}
     </div>
-
+    <div class="grid-wrapper">
+        <div class="container">
+            <div class="featured-projects">
+              <div class="grid">
+                <div class="grid-item">
+                    {{> ProjectCard1}}
+                </div>
+                <div class="grid-item">
+                    {{> ProjectCard2}}
+                </div>
+                <div class="grid-item">
+                    {{> ProjectCard1}}
+                </div>
+                <div class="grid-item">
+                    {{> ProjectCard2}}
+                </div>
+                <div class="grid-item">
+                    {{> ProjectCard1}}
+                </div>
+                <div class="grid-item">
+                    {{> ProjectCard2}}
+                </div>
+                <div class="grid-item">
+                    {{> ProjectCard1}}
+                </div>
+                <div class="grid-item">
+                    {{> ProjectCard2}}
+                </div>
+                <div class="grid-item">
+                    {{> ProjectCard1}}
+                </div>
+                <div class="grid-item">
+                    {{> ProjectCard2}}
+                </div>
+                <div class="grid-item">
+                    {{> ProjectCard1}}
+                </div>
+                <div class="grid-item">
+                    {{> ProjectCard2}}
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
     <script>
       setTimeout(function () {
           $('.grid').masonry({

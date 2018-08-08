@@ -1,3 +1,30 @@
-<template name="People">    
-    <h1>People</h1>
+<template name="People">
+    <div class="header-card">
+        <div class="container">
+            <h1>Connect with Creative Professionals</h1>
+        </div>
+    </div>
+    <div class="appbar">
+        {{> AppBar}}
+    </div> 
+    <div class="grid-wrapper">
+        <div class="container">
+            <div class="col-md-3">
+                <div class="filter-panel">
+                    Filter
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="people-list">
+                    {{> PeopleCard}}
+                </div>
+            </div>
+        </div>
+    </div>   
+</template>
+
+<template name="PeopleCard">
+    <div class="profile-pic">
+        <img src="img/user1.jpg" alt="">
+    </div>
 </template>
