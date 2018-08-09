@@ -4,6 +4,10 @@
     border-radius: 3px;
 }
 
+.card-footer{
+    border-top: none !important;
+}
+
 .project-card .featured-image{
     padding: 8px;    
     position: relative;

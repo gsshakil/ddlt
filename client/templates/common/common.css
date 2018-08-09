@@ -1,4 +1,7 @@
 /* ====================== Navbar ============================ */
+.become-pro{
+    margin-right: 25px;
+}
 
 /* ====================== AppBar ============================ */
 .appbar{
@@ -14,7 +17,7 @@
     float: left;
     border-right: 1px solid rgb(231, 231, 231);
     border-bottom: 1px solid rgb(231, 231, 231);        
-    width: 10%;
+    width: 11.11%;
     height: 80px;
     padding-top: 15px;
 }
@@ -32,7 +35,7 @@
 }
 
 .appbar .menu li i{
-    font-size: 32px;
+    font-size: 26px;
 }
 
 
@@ -78,6 +81,48 @@
 }
 
 
+/* ====================== FilterBar Shop ============================ */
+.filter-bar-shop{
+    box-shadow: 0px 0px 1px 0px #999;
+    height: 56px;
+    width: 100%;
+    text-align: center;
+    padding: 8px 12px;
+}
+
+.filter-bar-shop .menu li{
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 8px;
+}
+
+.filter-bar-shop .menu{
+    float: left;
+    margin-left: -12px;
+}
+
+.filter-bar-shop .menu li a{
+    display: block;
+}
+
+.keyword-search{
+    width: 250px;
+    float: left;
+    margin-right: 15px;
+    margin-top: 2px;
+}
+
+.location-search{
+    width: 250px;
+    margin-top: 2px;    
+}
+
+.post-item{
+    float: right;
+    margin-top: -38px;
+}
+
+
 /* ====================== Home ============================ */
 
 .grid-wrapper{
@@ -86,7 +131,8 @@
 
 .header-card{
     padding: 80px 50px;
-    background-color: #333;
+    /* background-color: #333; */
+    background: url("img/homebanner.jpg");
     color: #ddd;
     text-align: center;
 }

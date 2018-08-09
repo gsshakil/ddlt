@@ -1,0 +1,16 @@
+.campaign-card{
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
+.campaign-card .featured-image{
+}
+
+.campaign-card .featured-image img{
+    width: 100%;
+}
+
+.campaign-card .content{
+    padding: 25px 25px 0px 25px;
+}

@@ -7,7 +7,90 @@
     <div class="appbar">
         {{> AppBar}}
     </div> 
-    <div class="container">
-        <h1>Products</h1>
+    <div class="grid-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="filter-panel">
+                        <div class="form-group">
+                            <label for="keyword">Keyword</label>
+                            <input type="text" class="form-control" id="keyword" placeholder="Enter Keyword">
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" class="form-control" id="location" placeholder="Enter Location">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Category</label>                                                    
+                            <select class="form-control">
+                                <option>Photography</option>
+                                <option>Fashion</option>
+                                <option>Theme</option>
+                                <option>Shoes</option>
+                                <option>Crafts</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="product-list">
+                        <div class="featured-products">
+                            <div class="grid">
+                                <div class="grid-item">
+                                    {{> ProductCard1}}
+                                </div>
+                                <div class="grid-item">
+                                    {{> ProductCard1}}
+                                </div>
+                                <div class="grid-item">                                                                    
+                                    {{> ProductCard1}}
+                                </div>
+                                <div class="grid-item">                                
+                                    {{> ProductCard1}}
+                                </div>
+                                <div class="grid-item">                                
+                                    {{> ProductCard1}}
+                                </div>
+                                <div class="grid-item">                                
+                                    {{> ProductCard1}}
+                                </div>
+                                <div class="grid-item">                                
+                                    {{> ProductCard1}}
+                                </div>
+                                <div class="grid-item">                                
+                                    {{> ProductCard1}}
+                                </div>
+                                
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function () {
+            $('.grid').masonry({
+                // options...
+                itemSelector: '.grid-item',
+                masonry: {
+                    columnWidth: 10
+                }
+            });
+        }, 1000);
+    </script>
+</template>
+
+<template name="ProductCard1">
+    <div class="product-card">
+        <div class="featured-img">    
+            <img src="img/product1.jpg" alt="product">
+        </div>
+        <div class="product-card-footer">
+            <h5>Donim Midi Skirt</h5>
+            <h5 class="strong">$250</h5>
+            <a href="" class="btn btn-primary m-b-sm">Visit Product Site</a>
+        </div>
     </div>
 </template>

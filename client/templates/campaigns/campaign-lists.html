@@ -7,7 +7,56 @@
     <div class="appbar">
         {{> AppBar}}
     </div> 
-    <div class="container">
-        <h1>Campaigns</h1>
+    <div class="grid-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="filter-panel">
+                        <div class="form-group">
+                            <label for="keyword">Keyword</label>
+                            <input type="text" class="form-control" id="keyword" placeholder="Enter Keyword">
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" class="form-control" id="location" placeholder="Enter Location">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="campaign-list">
+                        <div class="row">
+                            <div class="col-md-6">
+                                {{> CampaignCard}}
+                            </div>
+                            <div class="col-md-6">
+                                {{> CampaignCard}}
+                            </div>
+                            <div class="col-md-6">
+                                {{> CampaignCard}}
+                            </div>
+                            <div class="col-md-6">
+                                {{> CampaignCard}}
+                            </div>
+                            
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="CampaignCard">
+    <div class="campaign-card">
+        <div class="featured-image">
+            <img src="img/cp1.jpg" alt="">
+        </div>
+        <div class="content">
+            <h4>GO CHAIR: The Bottle Sized Portable Chair</h4>
+            <p>One hand instant set up. Folds to the size of a water bottle. Super stable comfort and durability.</p>            
+        </div>
+        <div class="campaing-car-footer">
+            <a href="" class="btn btn-primary btn-block">View Campaign Site</a>
+        </div>
     </div>
 </template>

@@ -1,0 +1,16 @@
+.course-card{
+    box-shadow: 1px 2px 2px 1px #999;
+    margin-bottom: 25px;
+}
+
+.course-card .thumb-image{
+
+}
+
+.course-card .thumb-image img{
+    width: 100%;
+}
+
+.course-card .content{
+    padding: 15px;
+}

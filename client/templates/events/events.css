@@ -1,0 +1,14 @@
+.event-card{
+    padding: 25px;
+    box-shadow: 2px 2px 2px 1px #ddd;;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+}
+
+.event-card .map{
+    
+}
+
+.event-card .map img{
+    width: 100%;
+}

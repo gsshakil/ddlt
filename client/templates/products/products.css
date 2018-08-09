@@ -1,0 +1,19 @@
+.featured-img .grid-item{
+    width: 49%;
+    overflow: hidden;
+}
+
+.featured-img img{
+    width: 100%;
+}
+
+.product-card{
+    padding: 8x;
+    border-radius: 3px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.product-card-footer:{
+    padding: 8px;
+}

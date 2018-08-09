@@ -7,7 +7,51 @@
     <div class="appbar">
         {{> AppBar}}
     </div> 
-    <div class="container">
-        <h1>Events</h1>
+    <div class="grid-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="filter-panel">
+                        <div class="form-group">
+                            <label for="keyword">Keyword</label>
+                            <input type="text" class="form-control" id="keyword" placeholder="Enter Keyword">
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" class="form-control" id="location" placeholder="Enter Location">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="people-list">
+                        {{> EventCard}}
+                        {{> EventCard}}
+                        {{> EventCard}}
+                        {{> EventCard}}
+                        {{> EventCard}}
+                        {{> EventCard}}                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="EventCard">
+    <div class="event-card">    
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="title"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint corrupti rem voluptate quae !</a></h4>
+                <p>Venue: <a href="">Vinoy Park</a></p>
+                <p>Address: 701 Bay Shore DR Ne, St.Petersbeg, Floride</p>
+                <p>Time: 6:30PM GMT:6+</p>
+                <a href="" class="btn btn-primary">Visit Event Page</a>
+            </div>
+            <div class="col-md-6">
+                <div class="map">
+                    <img src="img/map1.jpg" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 </template>
