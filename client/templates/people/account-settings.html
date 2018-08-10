@@ -1,3 +1,143 @@
-<template name="AccountSettings">    
-    <h1>Account Settings</h1>
+<template name="AccountSettings">
+    <div class="grid-wrapper">
+        <div class="container">
+            {{> SettingsMenu}}
+            <div class="form-holder">
+                <form action="">
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="Enter First Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter Username">
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" class="form-control" id="location" placeholder="Enter Your Location">
+                    </div>
+                    <div class="form-group">
+                        <label for="occupation">Occupation</label>
+                        <input type="text" class="form-control" id="occupation" placeholder="Enter Occupation">
+                    </div>
+                    <div class="form-group">
+                        <label for="skills">Skills</label>
+                        <input type="text" class="form-control" id="skills" placeholder="Enter Skills">
+                    </div>
+                    <div class="form-group">
+                        <label for="website">Website URL</label>
+                        <input type="text" class="form-control" id="website" placeholder="Website URL">
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Bio</label>
+                        <textarea class="form-control" rows="3" placeholder="Enter a short bio"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>    
+</template>
+
+<template name="SettingsMenu">
+    <div class="settings-menu">
+        <ul>
+            <li><a href="{{pathFor 'settings'}}">Profile</a></li>
+            <li><a href="{{pathFor 'social'}}">Social Profile</a></li>
+            <li><a href="{{pathFor 'password'}}">Password</a></li>
+            <li><a href="{{pathFor 'email'}}">Email Notifications</a></li>
+        </ul>
+    </div>
+</template>
+
+<template name="SocialProfiles">
+    <div class="grid-wrapper">
+        <div class="container">
+            {{> SettingsMenu}}            
+        </div>
+        <div class="form-holder">
+            <form action="">
+                <div class="form-group">
+                    <label for="facebook">Facebook</label>
+                    <input type="text" class="form-control" id="facebook" placeholder="Enter Facebookm Link">
+                </div>
+                <div class="form-group">
+                    <label for="twitter">Twitter</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Enter Twitter Link">
+                </div>
+                <div class="form-group">
+                    <label for="linkedin">Linkedin</label>
+                    <input type="text" class="form-control" id="linkedin" placeholder="Enter Linkedin Link">
+                </div>
+                <div class="form-group">
+                    <label for="google">Google</label>
+                    <input type="text" class="form-control" id="google" placeholder="Enter Your Google Link">
+                </div>
+                <div class="form-group">
+                    <label for="instagram">Instagram</label>
+                    <input type="text" class="form-control" id="instagram" placeholder="Enter Instagram Profile Link">
+                </div>
+                <div class="form-group">
+                    <label for="github">Github</label>
+                    <input type="text" class="form-control" id="github" placeholder="Enter Your Github Profile Link">
+                </div>
+                <div class="form-group">
+                    <label for="youtube">Youtube</label>
+                    <input type="text" class="form-control" id="youtube" placeholder="Youtube URL">
+                </div>
+                <div class="form-group">
+                    <label for="behance">Behance</label>
+                    <input type="text" class="form-control" id="behance" placeholder="Behance URL">
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+    </div>
+</template>
+
+
+<template name="Password">
+    <div class="grid-wrapper">
+        <div class="container">
+            {{> SettingsMenu}}            
+        </div>
+        <div class="form-holder">        
+            <div class="form-group">
+                <label for="old-password">Old Password</label>
+                <input type="text" class="form-control" id="old-password" placeholder="Enter Your Old Password">
+            </div>
+            <div class="form-group">
+                <label for="new-password">New Password</label>
+                <input type="text" class="form-control" id="behance" placeholder="Enter New Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </div>
+</template>
+
+<template name="EmailNoifications">
+    <div class="grid-wrapper">
+        <div class="container">
+            {{> SettingsMenu}}            
+        </div>
+        <div class="form-holder">        
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    <strong>Weekly Email</strong>
+                    <span>A weekly email featuring works from the user you follow</span>
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    <strong>Email me when someone follows me</strong>
+                </label>
+            </div>
+        </div>
+    </div>
 </template>

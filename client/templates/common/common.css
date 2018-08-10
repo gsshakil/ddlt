@@ -132,9 +132,10 @@
 .header-card{
     padding: 80px 50px;
     background-color: #333;
-    background: url("img/homebanner.png");
+    /* background: url("img/homebanner.png"); */
     color: #ddd;
     text-align: center;
+    opacity: .7;
 }
 .grid-item{
     width: 24%;
