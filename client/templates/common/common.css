@@ -131,8 +131,8 @@
 
 .header-card{
     padding: 80px 50px;
-    /* background-color: #333; */
-    background: url("img/homebanner.jpg");
+    background-color: #333;
+    background: url("img/homebanner.png");
     color: #ddd;
     text-align: center;
 }

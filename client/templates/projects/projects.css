@@ -53,12 +53,13 @@
 .card-footer{
     font-size: 14px;
     text-align: center;
+    padding: 10px 0 !important;
 }
 
 span.view-count{
-    margin-right: 12px;
+    margin-right: 6px;
 }
 
 span.comment{
-    margin-right: 12px;
+    margin-right: 6px;
 }
